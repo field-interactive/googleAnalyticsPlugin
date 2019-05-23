@@ -1,5 +1,6 @@
 # googleAnalyticsPlugin
-A Simple Plugin to use Google Analytics with jQuery
+A Simple Plugin to use Google Analytics with jQuery. You don't need to put yout tracking in the `head` anymore, just initialize the Plugin with your Tracking-ID.
+
 
 ## Options
 | Option       | Type   | Default             | Description                                                          |
