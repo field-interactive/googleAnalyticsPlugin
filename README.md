@@ -2,11 +2,15 @@
 A Simple Plugin to use Google Analytics with jQuery
 
 ## Options
-| Option       | Type   | Default             | Description                                      |
-|--------------|--------|---------------------|--------------------------------------------------|
-| trackingCode | string | ''                  | Tracking Code of Google Analytics                |
-| elements     | array  | []                  | Array of Objects for specialized event tracking  |
-| optOutClass  | string | '.disableAnalytics' | Selector for OptOut                              |
+| Option       | Type   | Default             | Description                                                          |
+|--------------|--------|---------------------|----------------------------------------------------------------------|
+| trackingCode | string | ''                  | Tracking Code of Google Analytics                                    |
+| elements     | array  | []                  | Array of Objects for specialized event tracking                      |
+| selector     | string | ''                  | Selector for Element to track                                        |
+| category     | string | ''                  | A Category for the Event                                             |
+| event        | string | ''                  | Eventname e.g. click, play, hover                                    |
+| attrLabel    | string | ''                  | Attribute of Selected Element, if this does not exist just the label |
+| optOutClass  | string | '.disableAnalytics' | Selector for OptOut                                                  |
 
 ## Usage
 ```javascript
