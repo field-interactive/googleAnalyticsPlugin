@@ -13,6 +13,7 @@ You **don't** need to put you tracking in the `head` anymore, just initialize th
 | event        | string | ''                  | Eventname e.g. click, play, hover                                    |
 | attrLabel    | string | ''                  | Attribute of Selected Element, if this does not exist just the label |
 | optOutClass  | string | '.disableAnalytics' | Selector for OptOut                                                  |
+| optOutCallback  | function | null | Callback called after click on optout-button                                   |
 
 ## Usage
 ```javascript
@@ -34,7 +35,8 @@ jQuery(window).googleAnalytics({
                     attrLabel: 'href'
                 }
             ],
-            optOutClass: '.disableAnalytics'
+            optOutClass: '.disableAnalytics',
+            optOutCallback: _ => alert('Analytics disabled')
     }
 );
 ```

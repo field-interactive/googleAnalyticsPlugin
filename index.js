@@ -29,7 +29,8 @@
     const defaultOptions = {
         trackingCode: '',
         elements: [],
-        optOutClass: '.disableAnalytics'
+        optOutClass: '.disableAnalytics',
+        optOutCallback: null
     };
 
     /**
@@ -108,6 +109,9 @@
             if (jQuery(this.opts.optOutClass).length > 0) {
                 jQuery(this.opts.optOutClass).on('click', _ => {
                     this.setCookie('disableAnalytics', true, 365);
+                    if (this.opts.optOutCallback) {
+                        this.opts.optOutCallback();
+                    }
                 });
             }
         }
