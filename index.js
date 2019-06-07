@@ -1,6 +1,6 @@
 /**
  * Google Analytics Plugin for jQuery
- * @param {{optOutClass: string, [elements]: Array, trackingCode: string}} Options to define your analytics id and Elements to track
+ * @param {{optOutClass: string, elements: Array, trackingCode: string, optOutCallback: Function}} Options to define your analytics id and Elements to track
  */
 (function (global, factory) {
     'use strict';
@@ -24,7 +24,7 @@
 
     /**
      * Globals (shared across all plugin instances)
-     * @type {{optOutClass: string, elements: Array, trackingCode: string}}
+     * @type {{optOutClass: string, elements: Array, trackingCode: string, optOutCallback: Function}}
      */
     const defaultOptions = {
         trackingCode: '',
