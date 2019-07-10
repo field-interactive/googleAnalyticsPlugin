@@ -1,0 +1,26 @@
+{
+  "name": "googleanalyticsplugin",
+  "version": "0.0.1",
+  "description": "A Simple Plugin to use Google Analytics with jQuery",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/field-interactive/googleAnalyticsPlugin.git"
+  },
+  "keywords": [
+    "jquery",
+    "google",
+    "google-analytics",
+    "plugin",
+    "jquery-plugin"
+  ],
+  "author": "Dominik Deimel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/field-interactive/googleAnalyticsPlugin/issues"
+  },
+  "homepage": "https://github.com/field-interactive/googleAnalyticsPlugin#readme"
+}
